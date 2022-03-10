@@ -1,7 +1,7 @@
 <img align="right" width="256px" src="https://raw.githubusercontent.com/nicholashoule/img/master/me.svg">
 
 ![.NET Core Format](https://github.com/nicholashoule/csWordSplit/workflows/.NET%20Core%20Format/badge.svg?branch=master)
-![.NET Core Build](https://github.com/nicholashoule/csWordSplit/workflows/.NET%20Core%20Build/badge.svg?branch=master)
+[![.NET Core Build](https://github.com/nicholashoule/csWordSplit/actions/workflows/dotnetcore-build.yml/badge.svg?branch=main)](https://github.com/nicholashoule/csWordSplit/actions/workflows/dotnetcore-build.yml)
 [![Run on Repl.it](https://repl.it/badge/github/nicholashoule/csWordSplit)](https://repl.it/github/nicholashoule/csWordSplit)
 
 # csWordSplit
