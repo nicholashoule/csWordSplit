@@ -1,0 +1,30 @@
+---
+name: .NET Core Build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    name: Building on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-20.04, ubuntu-18.04]
+        #dotnet: ["3.1", "5.0", "6.0"]
+        dotnet: ["6.0"]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core ${{ matrix.dotnet }}
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ matrix.dotnet }}
+          include-prerelease: true
+
+      - name: Build .NET Project
+        run: |
+          dotnet build --configuration Release .
