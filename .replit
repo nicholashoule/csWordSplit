@@ -6,6 +6,8 @@ hidden = ["bin", "obj"]
 [env]
 DOTNET_NOLOGO = "1"
 DOTNET_CLI_TELEMETRY_OPTOUT = "1"
+DOTNET_ROOT = ""
+DOTNET_MULTILEVEL_LOOKUP = "0"
 
 [packager]
 language = "dotnet"
