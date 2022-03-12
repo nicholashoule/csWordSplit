@@ -37,17 +37,22 @@ public class Program
     public static void Main()
     {
         // Test Cases
-        //string data = "go!";
-        string data = "peanutbutterandjelly.";
-        //string data = "twowords.";
-        //string data = "  twowords   ";
-        //string data = "doesn'texits.";
-        //string data = "  a   b    c  d .";
-        //string data = "";
+        var tStringCases = new List<string>();
+        tStringCases.Add("go!");
+        tStringCases.Add("peanutbutterandjelly.");
+        tStringCases.Add("twowords.");
+        tStringCases.Add("  twowords   ");
+        tStringCases.Add("doesn'texits.");
+        tStringCases.Add("  a   b    c  d .");
+        tStringCases.Add("");
 
-        Console.WriteLine("Running StringSplit()\n");
-        Console.WriteLine("Input: {0}", data);
-        Console.WriteLine("Solution: \n{0}", ProperSentence(data));
+        foreach (string item in tStringCases)
+        {
+            Console.WriteLine("\nRunning StringSplit()");
+            Console.WriteLine($"Input: {item}");
+            Console.WriteLine($@"Solution: {ProperSentence(item)}");
+        }
+
     }
 
     /// <summary>
@@ -106,6 +111,9 @@ public class Program
                                                         {"create", 00008},
                                                         {"two", 00009},
                                                         {"words", 00010}};
+
+        // To-do: Handle words that contain other words
+        //wordDictEnglish.Add("an", 00011);
 
         // Loop using length from 0 to s1.Length
         for (int i = 0; i <= s1.Length; i++)
