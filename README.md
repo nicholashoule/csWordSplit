@@ -7,3 +7,11 @@
 # csWordSplit
 
 Take in a string of English words with punctuation and no field separators, and output a proper sentence.
+
+### Versions:
+
+dotnet 3.1+, <= 6.0
+
+##### Run the code:
+
+https://replit.com/@NicholasHoule/csWordSplit
